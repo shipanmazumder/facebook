@@ -1,0 +1,258 @@
+body, html{
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    font-family: 'Raleway', sans-serif;
+}
+
+.overflow-h{
+    overflow: hidden;
+}
+
+.text_colored{
+    color: #a2db43;
+}
+
+.wrappers{
+    height: 100%;
+    width: 100%;
+    background-image: url(../img/wrapper_bg_01.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 0;
+    overflow-y: scroll;
+}
+
+.wrapper{
+    width: 100%;
+    height: 100%;
+    float: left;
+    padding: 100px !important;
+}
+
+.wrapper_left{
+    background-color: #191820;
+    color: #fff;
+}
+
+.wrapper_left h5 {
+	font-size: 33px;
+	font-weight: 600;
+	letter-spacing: 1px;
+}
+
+.wrapper_left h3 {
+	font-size: 19px;
+    color: #ddd;
+}
+
+.wrapper_left h3 span {
+    font-weight: 700;
+}
+
+.form_wrapper {
+	background-color: #191820;
+	padding: 70px 30px;
+	width: 350px;
+	border-radius: 10px;
+	margin: 0 auto;
+	color: #fff;
+	box-shadow: 0 0 30px #414147;
+}
+
+.form_wrapper h3{
+    font-weight: 700;
+}
+
+.form_wrapper input {
+	width: 100%;
+	background-color: transparent;
+	color: #fff;
+	margin-bottom: 20px;
+	height: 45px;
+	border: 0;
+	font-size: 15px;
+	letter-spacing: 1px;
+    border-bottom: 1px solid #fff;
+    outline: 0;
+    transition: .3s;
+}
+
+.form_wrapper input:focus {
+	border-bottom: 1px solid #a2db43;
+}
+
+.password_sh{
+    position: relative;
+}
+
+.password_sh label {
+	position: absolute;
+	cursor: pointer;
+	right: 0;
+	top: 22%;
+	font-size: 22px;
+    margin: 0;
+    color: #a2db43;
+}
+
+.form_wrapper a {
+	transition: .3s;
+	margin-top: 5px;
+	margin-bottom: 10px;
+	font-weight: 300;
+	display: block;
+	font-size: 12px;
+	text-decoration: none;
+	letter-spacing: 1px;
+	outline: 0;
+	text-align: right;
+}
+
+.form_wrapper a:hover{
+    opacity: .7;
+    color: #a2db43;
+}
+
+.form_wrapper p {
+	font-size: 13px;
+	text-align: center;
+	margin-bottom: 0;
+	font-weight: 300;
+	letter-spacing: 1px;
+}
+
+.form_wrapper p a {
+	text-align: inherit;
+	display: inline-block;
+}
+
+.form_wrapper button {
+	outline: 0;
+	width: 100%;
+	height: 45px;
+	border-radius: 50px;
+    cursor: pointer;
+    border: 0;
+	text-transform: uppercase;
+	font-weight: 700;
+    letter-spacing: 2px;
+    position: relative;
+    padding-right: 50px;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) .3s;
+    padding-top: 2px;
+	margin-top: 30px;
+}
+
+.form_wrapper button i {
+	font-size: 20px;
+	position: absolute;
+	top: 50%;
+    transform: translateY(-50%);
+    margin-left: 10px;
+}
+
+.form_wrapper button:hover {
+    padding-right: 40px;
+    background-color: #a2db43;
+}
+
+.form_wrapper button:hover i {
+    margin-left: 15px;
+}
+
+.login_with_fb {
+	text-align: center !important;
+	color: #fff;
+	font-size: 15px !important;
+	background-color: #4267B2;
+	padding: 9px 0;
+    border-radius: 50px;
+    font-weight: 500 !important;
+}
+
+.login_with_fb i {
+	margin-right: 15px;
+}
+
+.login_with_fb:hover {
+    color: #fff !important;
+    opacity: 1 !important;
+    background-color: rgb(40, 82, 165);
+}
+
+/*Checkboxes styles*/
+input[type="checkbox"] { display: none; }
+
+input[type="checkbox"] + label {
+	display: block;
+	position: relative;
+	padding-left: 30px;
+	color: #ddd;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	font-size: 14px;
+    text-align: left;
+    transition: .3s;
+}
+
+input[type="checkbox"] + label:last-child { margin-bottom: 0; }
+
+input[type="checkbox"] + label:before {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #a2db43;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: .6;
+    -webkit-transition: all .12s, border-color .08s;
+    transition: all .12s, border-color .08s;
+}
+
+input[type="checkbox"]:checked + label {
+    color: #a2db43;
+}
+
+input[type="checkbox"]:checked + label:before {
+    width: 10px;
+    top: -5px;
+    left: 5px;
+    border-radius: 0;
+    opacity: 1;
+    border-top-color: transparent;
+    border-left-color: transparent;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+
+/* responsive css */
+
+@media (max-width: 1000px) {
+    .wrapper{
+        padding: 50px !important;
+    }
+}
+
+@media (min-width: 767px) and (max-width: 1000px) {
+    .wrapper_right{
+        padding: 30px !important;
+    }
+}
+
+@media (max-width: 400px) {
+    .wrapper_right{
+        padding: 50px 0 !important;
+    }
+    .form_wrapper {
+        width: 310px !important;
+    }
+}
